@@ -1,0 +1,8 @@
+README.md
+setup.py
+DBSpythonlib/DBSolution.py
+DBSpythonlib/__init__.py
+DBSpythonlib.egg-info/PKG-INFO
+DBSpythonlib.egg-info/SOURCES.txt
+DBSpythonlib.egg-info/dependency_links.txt
+DBSpythonlib.egg-info/top_level.txt
