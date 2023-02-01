@@ -74,13 +74,3 @@ class ObjectStore:
         db_file.write(jsonData)
         db_file.close()
         print("Data saved to file")
-
-db = ObjectStore("input")
-
-dict = {"hello": "world", "hey": "hi"}
-
-db.AddDict(dict)
-db.AddRecord("Knu", "Break")
-db.viewSavedRecords()
-db.searchValue("Aka")
-db.saveDataToFile()
