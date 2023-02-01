@@ -1,0 +1,29 @@
+import unittest
+import json
+import os
+from pathlib import Path
+
+class ObjectStoreTest(unittest.TestCase):
+
+    def setUp(self):
+        self.file_path = "test.json"
+        self.object_store = ObjectStore()
+        self.object_store.file_path = self.file_path
+    
+    def tearDown(self):
+        if Path(self.file_path).exists():
+            os.remove(self.file_path)
+
+    def test_saveData(self):
+        data = {'test': 'data'}
+        self.object_store.saveData(data)
+        with open(self.file_path, "r") as f:
+            self.assertEqual(json.load(f), data)
+
+    def test_fetchData(self):
+        data = {'test': 'data'}
+        self.object_store.saveData(data)
+        self.assertEqual(self.object_store.fetchData(), data)
+
+if __name__ == '__main__':
+    unittest.main()
