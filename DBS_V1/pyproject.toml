@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "DBSolution.py"
+version = "0.0.1"
+authors = [
+  { name="Michael Kamara" },
+  {name="Yosuf Ibrahim"},
+  {name="Osama Beshir"},
+  {name="Navid Mircoram"},
+  {name="Ilyas Brahim"},
+  {name="Imran Brahim"},
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/echomicke/Example-project-DB"
